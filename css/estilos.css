@@ -1,0 +1,224 @@
+@keyframes enter{
+	0% {
+		margin-top: 150%;
+		-webkit-transition: margin-top;
+		-o-transition: margin-top;
+		-moz-transition: margin-to;
+		-ms-transition: color 0.2;
+		-khtml-transition: color 0.2;
+		transition: margin-top;
+	}
+	60% {
+		margin-top: 5%;
+		-webkit-transition: margin-top;
+		-o-transition: margin-top;
+		-ms-transition: color 0.2;
+		-khtml-transition: color 0.2;
+		transition: margin-top;
+	}
+	100%{
+		margin-top: 0%;
+	}
+}
+@font-face {
+  font-family: "dancing";
+  src: local("Dancing Script"),
+  local("Dancing Script"),
+  url(dancing.ttf);
+  font-weight: normal;
+}
+body{
+	background-color:  #02010a;
+	font-family: dancing;
+}
+img{
+	-moz-box-shadow: 2px 2px #02010a; 
+	-webkit-box-shadow: 2px 2px #02010a; 
+	-khtml-box-shadow: 2px 2px #02010a;
+	-ms-box-shadow: 2px 2px #02010a;
+	-o-box-shadow: 2px 2px #02010a;
+	box-shadow: 2px 2px #02010a;
+}
+.head{
+	width: 100%;
+	background-color: #5b7989;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	margin-bottom: -15px;
+	-webkit-animation: enter 2s;
+	-o-animation: enter 0.2s;
+	-moz-animation: enter 0.2;
+	-ms-animation: enter 0.2;
+	-khtml-animation: enter 0.2;
+	animation: enter 2s;
+}
+.head h1{
+	color: #FFFFFF;
+	text-shadow: 2px 0px #02010a;
+}
+.menu ul{
+	list-style: none;
+	display: flex;
+	flex-flow: row wrap;
+}
+.menu ul li a:link, a:visited{
+	text-decoration-line: none;
+	color: black;
+	-webkit-transition: color 0.2s;
+	-o-transition: color 0.2s;
+	-moz-transition: color 0.2;
+	-ms-transition: color 0.2;
+	-khtml-transition: color 0.2;
+	transition: color 0.2s;
+}
+.menu ul li a:hover{
+	color:aquamarine;
+}
+.menu ul li a:active{
+	color: aquamarine;
+}
+.head ul li{
+	padding-right: 10px;
+}
+.img {
+	display: flex;
+	justify-content: center;
+	background-color: #82c3a6;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	margin-bottom: 1px;
+}
+.pic_dere img, .pic_iz img {
+	width: 60%;
+	margin-top: 20px;
+	justify-content: center;
+}
+.sides {
+	text-align: center;
+}
+.pic_iz img:hover{
+	-webkit-transform: rotate(10deg);
+	-o-transform: rotate(10deg);
+	-moz-transform: rotate(10deg);
+	-ms-transform: rotate(10deg);
+	-khtml-transform: rotate(10deg);
+	transform: rotate(10deg);
+	-moz-box-shadow: 2px 2px #82c3a6; 
+	-webkit-box-shadow: 2px 2px #82c3a6; 
+	-khtml-box-shadow: 2px 2px #82c3a6;
+	-ms-box-shadow: 2px 2px #82c3a6;
+	-o-box-shadow: 2px 2px #82c3a6;
+	box-shadow: 2px 2px #82c3a6;
+}
+.pic_dere img:hover{
+	-moz-box-shadow: 2px 2px #82c3a6; 
+	-webkit-box-shadow: 2px 2px #82c3a6; 
+	-khtml-box-shadow: 2px 2px #82c3a6;
+	-ms-box-shadow: 2px 2px #82c3a6;
+	-o-box-shadow: 2px 2px #82c3a6;
+	box-shadow: 2px 2px #82c3a6;
+	-webkit-transform: translate(20px,-5px);
+	-o-transform: translate(20px,-5px);
+	-moz-transform: translate(20px,-5px);
+	-ms-transform: translate(20px,-5px);
+	-khtml-transform: translate(20px,-5px);
+	transform: translate(20px,-5px);
+}
+.col {
+	width: 25%;
+}
+.col img{
+	width: 2em;
+	-moz-box-shadow: none; 
+	-webkit-box-shadow: none; 
+	-khtml-box-shadow: none;
+	-ms-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+}
+.fut{
+	width: 80%;
+	padding-left: 10%;
+	padding-right: 10%;
+	background-color: #C6d5c5;
+}
+.gal{
+	background-color: #d5c75f;
+	display: block;
+	width: 100%;
+	justify-content: center;
+}
+.i1 {
+	filter: blur(10px);
+}
+.i2{
+	filter: grayscale(100%);
+}
+.i3{
+	filter: sepia(90);
+}
+@media (max-width:900px) {
+	.contenido{
+		width: 100%;
+	}
+	.menu ul {
+		justify-content: center;
+	}
+	.sides {
+		display: inline-table;
+	}
+	.fut{
+		justify-content: center;
+		display: inline-block;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+	.a2 {
+		background-color: #d5c75f
+	}
+	
+	.gal .sides{
+		width: 100%;
+	}
+	.gal img{
+		width: 40%;
+	}
+}
+@media (min-width: 900px) {
+	.contenido {
+		width: 900px;
+		padding-left: 20%;
+	}
+	.menu ul {
+		justify-content: flex-end;
+	}
+	.sides {
+		display: inline-flex;
+		width: 48%;
+	}
+	.col{
+		text-align: center;
+		align-content: center;
+		float: left;
+	}
+	.fut{
+		display: inline-block;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+	.a2 {
+		background-color: #d5c75f
+	}
+	
+	.gal .sides{
+		width: 25%;
+		padding-left: 5%;
+		padding-right: 2%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+a{
+	text-decoration: none;
+}
+
