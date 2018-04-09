@@ -187,7 +187,7 @@ img{
 @media (min-width: 900px) {
 	.contenido {
 		width: 900px;
-		padding-left: 20%;
+		margin: 0 auto;
 	}
 	.menu ul {
 		justify-content: flex-end;
